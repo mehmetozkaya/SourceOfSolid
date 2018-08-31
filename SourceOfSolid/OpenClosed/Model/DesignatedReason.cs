@@ -1,6 +1,6 @@
 ﻿namespace SourceOfSolid.OpenClosed.Model
-{
-    internal class DesignatedReason
+{    
+    internal class DesignatedReason : IDesignatedReason
     {
         public bool IsDesignated => false;
 

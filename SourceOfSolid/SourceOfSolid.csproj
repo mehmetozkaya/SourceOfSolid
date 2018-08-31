@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="OpenClosed\Model\Cart.cs" />
     <Compile Include="OpenClosed\Model\DesignatedReason.cs" />
+    <Compile Include="OpenClosed\Model\IDesignatedReason.cs" />
     <Compile Include="OpenClosed\Model\INotificationService.cs" />
     <Compile Include="OpenClosed\Model\IPaymentProcessor.cs" />
     <Compile Include="OpenClosed\Model\IReservationService.cs" />
