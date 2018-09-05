@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SourceOfSolid.OpenClosed.Model
 {
-    public abstract class Order
+    public abstract class Order : IOrder
     {
         protected readonly Cart _cart;
 
@@ -19,5 +19,10 @@ namespace SourceOfSolid.OpenClosed.Model
         {
             // log the order in the database
         }
+    }
+
+    public interface IOrder
+    {
+        void Checkout();
     }
 }

@@ -2,7 +2,7 @@
 
 namespace SourceOfSolid.OpenClosed.Model
 {
-    public class PoSCreditOrder : Order
+    internal class PoSCreditOrder : Order
     {
         private readonly PaymentDetails _paymentDetails;
         private readonly IPaymentProcessor _paymentProcessor;
