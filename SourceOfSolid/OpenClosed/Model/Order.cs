@@ -19,10 +19,16 @@ namespace SourceOfSolid.OpenClosed.Model
         {
             // log the order in the database
         }
+
+        public OrderItem GetItem(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public interface IOrder
     {
         void Checkout();
+        OrderItem GetItem(int id);
     }
 }
