@@ -52,6 +52,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SourceOfSolid\FrontDesk.SharedKernel\FrontDesk.SharedKernel.csproj">
+      <Project>{f2bd4dac-b363-4af2-bf54-9137d4ba074e}</Project>
+      <Name>FrontDesk.SharedKernel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
