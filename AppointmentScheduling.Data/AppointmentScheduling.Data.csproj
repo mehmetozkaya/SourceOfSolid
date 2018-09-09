@@ -48,7 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Events\Message.cs" />
+    <Compile Include="Events\ServiceBrokerWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AppointmentDTORepository.cs" />
+    <Compile Include="Repositories\ScheduleRepository.cs" />
     <Compile Include="SchedulingContext.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,7 +59,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositories\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
