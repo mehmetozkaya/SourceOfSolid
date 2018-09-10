@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IApplicationSettings.cs" />
+    <Compile Include="Interfaces\IAppointmentDTORepository.cs" />
+    <Compile Include="Interfaces\IMessagePublisher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
