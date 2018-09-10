@@ -45,14 +45,20 @@
     <Compile Include="Interfaces\IMessagePublisher.cs" />
     <Compile Include="Interfaces\IScheduleRepository.cs" />
     <Compile Include="Model\AppointmentDTO.cs" />
+    <Compile Include="Model\ScheduleAggregate\Appointment.cs" />
     <Compile Include="Model\ValueObjects\AnimalType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\ApplicationEvents\" />
     <Folder Include="Model\Events\" />
-    <Folder Include="Model\ScheduleAggregate\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SourceOfSolid\FrontDesk.SharedKernel\FrontDesk.SharedKernel.csproj">
+      <Project>{f2bd4dac-b363-4af2-bf54-9137d4ba074e}</Project>
+      <Name>FrontDesk.SharedKernel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
