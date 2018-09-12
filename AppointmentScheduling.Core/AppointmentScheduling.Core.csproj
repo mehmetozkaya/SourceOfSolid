@@ -46,6 +46,7 @@
     <Compile Include="Interfaces\IScheduleRepository.cs" />
     <Compile Include="Model\AppointmentDTO.cs" />
     <Compile Include="Model\ScheduleAggregate\Appointment.cs" />
+    <Compile Include="Model\ScheduleAggregate\AppointmentType.cs" />
     <Compile Include="Model\ValueObjects\AnimalType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
