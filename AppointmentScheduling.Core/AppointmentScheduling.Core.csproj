@@ -44,6 +44,7 @@
     <Compile Include="Interfaces\IAppointmentDTORepository.cs" />
     <Compile Include="Interfaces\IMessagePublisher.cs" />
     <Compile Include="Interfaces\IScheduleRepository.cs" />
+    <Compile Include="Model\ApplicationEvents\AppointmentConfirmedEvent.cs" />
     <Compile Include="Model\AppointmentDTO.cs" />
     <Compile Include="Model\Events\AppointmentConfirmedEvent.cs" />
     <Compile Include="Model\Events\AppointmentScheduledEvent.cs" />
@@ -58,7 +59,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\ApplicationEvents\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
