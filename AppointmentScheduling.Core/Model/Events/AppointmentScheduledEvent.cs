@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace AppointmentScheduling.Core.Model.Events
 {
-    public class AppointmentConfirmedEvent : IDomainEvent
+    public class AppointmentScheduledEvent : IDomainEvent
     {
-        public AppointmentConfirmedEvent(Appointment appointment) : this()
+        public AppointmentScheduledEvent(Appointment appointment) : this()
         {
-            AppointmentUpdated = appointment;
+            AppointmentScheduled = appointment;
         }
 
-        public AppointmentConfirmedEvent()
+        public AppointmentScheduledEvent()
         {
             this.Id = Guid.NewGuid();
             DateTimeEventOccurred = DateTime.Now;
@@ -25,6 +25,6 @@ namespace AppointmentScheduling.Core.Model.Events
 
         public DateTime DateTimeEventOccurred { get; private set; }
 
-        public Appointment AppointmentUpdated { get; private set; }
+        public Appointment AppointmentScheduled { get; private set; }
     }
 }
