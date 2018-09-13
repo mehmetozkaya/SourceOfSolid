@@ -47,6 +47,7 @@
     <Compile Include="Model\AppointmentDTO.cs" />
     <Compile Include="Model\Events\AppointmentConfirmedEvent.cs" />
     <Compile Include="Model\Events\AppointmentScheduledEvent.cs" />
+    <Compile Include="Model\Events\AppointmentUpdatedEvent.cs" />
     <Compile Include="Model\ScheduleAggregate\Appointment.cs" />
     <Compile Include="Model\ScheduleAggregate\AppointmentType.cs" />
     <Compile Include="Model\ScheduleAggregate\Client.cs" />
