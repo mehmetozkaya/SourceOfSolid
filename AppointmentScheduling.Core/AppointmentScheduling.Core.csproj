@@ -59,6 +59,7 @@
     <Compile Include="Model\ValueObjects\AnimalType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\EmailConfirmationHandler.cs" />
+    <Compile Include="Services\RelayAppointmentScheduledService.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
