@@ -65,5 +65,48 @@ namespace ClientPatientManagement.Data
         }
     }
 
+    public class RootRepository : IRepository<Root>
+    {
+        public IEnumerable<Root> List()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Root GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Insert(Root entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Root entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class NonRoot : IEntity
+    {
+        public int Id
+        {
+            get { throw new NotImplementedException(); }
+        }
+    }
+
+    public class ClientCode
+    {
+        public void Foo()
+        {
+            var result = new Repository<NonRoot>().GetById(1);
+        }
+    }
 
 }
