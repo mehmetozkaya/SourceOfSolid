@@ -12,6 +12,16 @@ namespace ClientPatientManagement.Data
         private readonly CrudContext _context;
         private readonly DbSet<TEntity> _dbSet;
 
+        public Repository()
+        {
+
+        }
+        public Repository(CrudContext context)
+        {
+            this._context = context;
+            this._dbSet = context.Set<TEntity>();
+        }
+
 
     }
 }
