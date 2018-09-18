@@ -11,5 +11,10 @@ namespace ClientPatientManagement.Core.Model
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public Doctor(int id, string name)
+        {
+
+        }
     }
 }
