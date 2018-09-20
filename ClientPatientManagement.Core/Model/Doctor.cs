@@ -15,7 +15,12 @@ namespace ClientPatientManagement.Core.Model
         public Doctor(int id, string name)
         {
             Id = id;
-            name = name
+            Name = name;
         }
+    }
+
+    internal class EntityManager<T> where T : class
+    {
+
     }
 }
