@@ -18,9 +18,9 @@ namespace ClientPatientManagement.Core.Model
             Name = name;
         }
 
-        private void WriteDown()
+        private void WriteDown(string id, string name)
         {
-
+            Console.WriteLine(id + " " + name);
         }
     }
 
