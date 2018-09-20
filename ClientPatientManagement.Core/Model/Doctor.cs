@@ -17,6 +17,11 @@ namespace ClientPatientManagement.Core.Model
             Id = id;
             Name = name;
         }
+
+        private void WriteDown()
+        {
+
+        }
     }
 
     internal class EntityManager<T> where T : class
