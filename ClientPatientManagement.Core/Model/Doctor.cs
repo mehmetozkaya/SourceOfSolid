@@ -20,7 +20,12 @@ namespace ClientPatientManagement.Core.Model
 
         private void WriteDown(string id, string name)
         {
-            Console.WriteLine(id + " " + name);
+            Console.WriteLine(ToString());
+        }
+
+        private string ToString()
+        {
+            return $"{Name} and the unique {Id}";
         }
     }
 
