@@ -20,13 +20,10 @@ namespace ClientPatientManagement.Core.Model
 
         private void WriteDown(string id, string name)
         {
-            Console.WriteLine(ToString());
+            Console.WriteLine(ToString);
         }
 
-        private string ToString()
-        {
-            return $"{Name} and the unique {Id}";
-        }
+        private string ToString => $"{Name} and the unique {Id}";
     }
 
     internal class EntityManager<T> where T : class
