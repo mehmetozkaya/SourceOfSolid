@@ -50,6 +50,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="DataModel\VetOfficeContext.cs" />
     <Compile Include="Model\Appointment.cs" />
+    <Compile Include="Model\Doctor.cs" />
     <Compile Include="Model\ValueObjects\AnimalType.cs" />
     <Compile Include="Model\ValueObjects\AppointmentStartEnd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
