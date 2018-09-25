@@ -18,5 +18,6 @@ namespace VetOffice.SharedDatabase.Model
         public int AppointmentTypeId { get; set; }
         public string Title { get; set; }
         public DateTime? DateTimeConfirmed { get; set; }
+        public string Description { get; set; }
     }
 }
