@@ -12,5 +12,10 @@ namespace VetOffice.SharedDatabase.Model
         public string Name { get; set; }
         public string Proficience { get; set; }
 
+        public Doctor(int doctorId)
+        {
+            DoctorId = doctorId;
+        }
+
     }
 }
