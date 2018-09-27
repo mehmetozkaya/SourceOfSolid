@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,12 @@ namespace ClientPatientManagement.Core
             var memberInfo = type.GetMember(value.ToString());
             var attributes = memberInfo[0].GetCustomAttributes(typeof(T), false);
             return (T)attributes[0];
+        }
+
+        public static string ToDesc(this Enum value)
+        {
+            var attribute = value.GetAttribute<DescriptionAttribute>();
+            return attribute == null ? value.ToString() : attribute.Description;
         }
     }
 }
