@@ -19,8 +19,8 @@ namespace VetOffice.SharedDatabase.Model
         
         private void DoctorCall(string callName)
         {
-            string asd = "mozk";
-        }
+            var asd = "mozk";
 
-    }
+        }
+    }    
 }
