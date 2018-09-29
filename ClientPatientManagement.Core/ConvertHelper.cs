@@ -50,6 +50,34 @@ namespace ClientPatientManagement.Core
             }
         }
 
+        public static bool CheckIsConvertible(object value)
+        {
+            IConvertible convertible = value as IConvertible;
+            return convertible != null;
+        }
+        public static object To(Type type, object value, object defaultValue = null, string cultureInfo = null)
+        {
+            if (value == null || value == DBNull.Value)
+                return Default(type, value, defaultValue);
+
+            Type underlyingType = Nullable.GetUnderlyingType(type);
+            bool convertSucceed;
+
+            if (underlyingType != null)
+            {
+                var underlyingConverted = TryTo(underlyingType, value, defaultValue, cultureInfo, out convertSucceed);
+
+                if (!convertSucceed)
+                {
+                    return Default(type, value, defaultValue);
+                }
+
+                return underlyingConverted;
+            }
+            return TryTo(type, value, defaultValue, cultureInfo, out convertSucceed);
+        }
+
+
         public static object Default(Type type, object value, object defaultValue = null)
         {
             if (type.IsValueType)
