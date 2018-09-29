@@ -78,7 +78,7 @@ namespace ClientPatientManagement.Core
         }
 
 
-        public static object Default(Type type, object value, object defaultValue = null)
+        public static object Default(Type type, object value = null, object defaultValue = null)
         {
             if (type.IsValueType)
             {
