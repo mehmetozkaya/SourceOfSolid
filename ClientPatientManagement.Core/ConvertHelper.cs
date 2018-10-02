@@ -119,6 +119,13 @@ namespace ClientPatientManagement.Core
             return decimal.Parse(clearText, CultureInfo.GetCultureInfo("tr-TR"));
         }
 
+        public static int ToInt(string value)
+        {
+            if (int.TryParse(value, out int res))
+                return res;
+            return 0;
+        }
+
 
     }
 }
