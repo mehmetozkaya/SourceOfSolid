@@ -126,6 +126,12 @@ namespace ClientPatientManagement.Core
             return 0;
         }
 
+        public static double ToDouble(string value)
+        {
+            // TODO
+            return double.MinValue;
+        }
+
 
     }
 }
