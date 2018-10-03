@@ -19,6 +19,7 @@ namespace ClientPatientManagement.Core
 
         private void ToReas()
         {
+            // TODO
             Console.WriteLine("Common");
         }
 
