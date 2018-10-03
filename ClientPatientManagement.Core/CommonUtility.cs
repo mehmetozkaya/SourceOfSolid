@@ -19,5 +19,10 @@ namespace ClientPatientManagement.Core
         {
             Console.WriteLine("Common");
         }
+
+        protected string Write(string text)
+        {
+            return text.ToLower();
+        }
     }
 }
