@@ -15,6 +15,9 @@ namespace ClientPatientManagement.Core
             Instance = new CommonUtility();
         }
 
-
+        private void ToReas()
+        {
+            Console.WriteLine("Common");
+        }
     }
 }
