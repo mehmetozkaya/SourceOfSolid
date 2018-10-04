@@ -33,5 +33,10 @@ namespace ClientPatientManagement.Core
             _eligibleFox = eligibleFox;
         }
 
+        protected void Handle()
+        {
+
+        }
+
     }
 }
