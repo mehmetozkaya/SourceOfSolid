@@ -26,6 +26,12 @@ namespace ClientPatientManagement.Core
 
     public class EligibilityHandler
     {
+        private readonly string _eligibleFox = "ELINGFX";
+
+        public EligibilityHandler(string eligibleFox)
+        {
+            _eligibleFox = eligibleFox;
+        }
 
     }
 }
