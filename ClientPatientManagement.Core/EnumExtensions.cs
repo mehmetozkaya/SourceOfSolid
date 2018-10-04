@@ -23,4 +23,9 @@ namespace ClientPatientManagement.Core
             return attribute == null ? value.ToString() : attribute.Description;
         }
     }
+
+    public class EligibilityHandler
+    {
+
+    }
 }
