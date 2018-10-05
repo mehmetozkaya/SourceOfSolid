@@ -31,6 +31,7 @@ namespace ClientPatientManagement.Core
         public EligibilityHandler(string eligibleFox)
         {
             _eligibleFox = eligibleFox;
+
         }
 
         protected void Handle()
