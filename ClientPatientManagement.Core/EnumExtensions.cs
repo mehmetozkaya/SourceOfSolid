@@ -37,6 +37,10 @@ namespace ClientPatientManagement.Core
         protected void Handle()
         {
             string handleMessage = string.Empty;
+
+            if (handleMessage == null)
+                handleMessage = "ad";
+            handleMessage = "asd";                
         }
 
     }
