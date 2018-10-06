@@ -36,7 +36,7 @@ namespace ClientPatientManagement.Core
 
         protected void Handle()
         {
-
+            string handleMessage = string.Empty;
         }
 
     }
