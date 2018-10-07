@@ -45,7 +45,7 @@ namespace ClientPatientManagement.Core
 
         private void Rest()
         {
-
+            var asd = string.Empty;
         }
 
     }
