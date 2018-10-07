@@ -43,5 +43,10 @@ namespace ClientPatientManagement.Core
             handleMessage = "asd";                
         }
 
+        private void Rest()
+        {
+
+        }
+
     }
 }
