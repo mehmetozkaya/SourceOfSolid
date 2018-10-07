@@ -48,5 +48,7 @@ namespace ClientPatientManagement.Core
             var asd = string.Empty;
         }
 
+        public string ToString => "asd";
+
     }
 }
