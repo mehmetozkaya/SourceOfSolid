@@ -8,10 +8,13 @@ namespace ClientPatientManagement.Core
 {
     public class Context<T>
     {
-        private Dictionary<int, T> _dictionaryContext;
+        private readonly Dictionary<int, T> _dictionaryContext;
         public String Name { get; private set; }
 
-
-
+        public Context(Dictionary<int, T> dictionaryContext, string name)
+        {
+            _dictionaryContext = dictionaryContext;
+            Name = name;
+        }
     }
 }
