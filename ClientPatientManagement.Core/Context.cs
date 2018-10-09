@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClientPatientManagement.Core
 {
-    public class Context<T>
+    internal class Context<T>
     {
         private readonly Dictionary<int, T> _dictionaryContext;
         public String Name { get; private set; }
@@ -30,6 +30,14 @@ namespace ClientPatientManagement.Core
             get { return _dictionaryContext.Values; }
         }
 
+        public void Add(int key, T value)
+        {
+            _dictionaryContext.Add(key, value);
+        }
 
+        public bool Remove(int key)
+        {
+            return _dictionaryContext.Remove(key);
+        }
     }
 }
