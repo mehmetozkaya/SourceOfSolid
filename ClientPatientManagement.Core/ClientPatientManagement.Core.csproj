@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonUtility.cs" />
+    <Compile Include="Context.cs" />
     <Compile Include="ConvertHelper.cs" />
     <Compile Include="EnumExtensions.cs" />
     <Compile Include="EnumLabelConverter.cs" />
