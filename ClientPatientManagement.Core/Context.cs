@@ -16,5 +16,20 @@ namespace ClientPatientManagement.Core
             _dictionaryContext = dictionaryContext;
             Name = name;
         }
+
+        public int Count
+        {
+            get { return _dictionaryContext.Count(); }
+        }
+        public Dictionary<int, T>.KeyCollection Keys
+        {
+            get { return _dictionaryContext.Keys; }
+        }
+        public Dictionary<int, T>.ValueCollection Values
+        {
+            get { return _dictionaryContext.Values; }
+        }
+
+
     }
 }
