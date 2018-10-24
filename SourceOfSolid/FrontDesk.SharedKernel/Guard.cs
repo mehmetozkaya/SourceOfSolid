@@ -31,5 +31,13 @@ namespace FrontDesk.SharedKernel
                 throw new ArgumentOutOfRangeException(parameterName);
             }
         }
+
+        public static void ForNullOrEmpty(object value, string parameterName)
+        {
+            if (null == value)
+            {
+                throw new ArgumentOutOfRangeException(parameterName);
+            }
+        }
     }
 }

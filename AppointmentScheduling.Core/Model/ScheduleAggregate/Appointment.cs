@@ -91,7 +91,7 @@ namespace AppointmentScheduling.Core.Model.ScheduleAggregate
 
         private void CreateOrUpdate(Appointment appointment)
         {
-
+            Guard.ForNullOrEmpty(appointment, "appointment");
         }
     }
 }
