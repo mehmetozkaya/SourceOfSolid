@@ -92,6 +92,12 @@ namespace AppointmentScheduling.Core.Model.ScheduleAggregate
         private void CreateOrUpdate(Appointment appointment)
         {
             Guard.ForNullOrEmpty(appointment, "appointment");
+
+            var appointmentWillUpdate = new Appointment(appointment.Id);        
+            appointmentWillUpdate.ScheduleId = appointment.Id;
+            appointmentWillUpdate.PatientId = appointment.PatientId;
+            appointmentWillUpdate.ClientId = appointment.ClientId;
+            appointmentWillUpdate.RoomId = appointment.RoomId;
         }
     }
 }
