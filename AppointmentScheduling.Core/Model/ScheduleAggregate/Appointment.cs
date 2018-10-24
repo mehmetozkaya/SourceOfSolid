@@ -88,5 +88,10 @@ namespace AppointmentScheduling.Core.Model.ScheduleAggregate
             appointment.Title = title;
             return appointment;
         }
+
+        private void CreateOrUpdate(Appointment appointment)
+        {
+
+        }
     }
 }
