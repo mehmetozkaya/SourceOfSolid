@@ -99,5 +99,10 @@ namespace AppointmentScheduling.Core.Model.ScheduleAggregate
             appointmentWillUpdate.ClientId = appointment.ClientId;
             appointmentWillUpdate.RoomId = appointment.RoomId;
         }
+
+        private void RasonFor()
+        {
+
+        }
     }
 }
