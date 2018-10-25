@@ -94,6 +94,12 @@ namespace AppointmentScheduling.Core.Model.ScheduleAggregate
         {
             MarkConflictingAppointments();
         }
+
+        private IEnumerable<string> AppointmentSchedules()
+        {
+            var listofschdules = new List<string>();
+            return listofschdules;
+        }
     }
 
 }
