@@ -98,6 +98,13 @@ namespace AppointmentScheduling.Core.Model.ScheduleAggregate
         private IEnumerable<string> AppointmentSchedules()
         {
             var listofschdules = new List<string>();
+
+            string[] times =
+            {
+                "10-11",
+                "11-12"
+            };
+
             return listofschdules;
         }
     }
