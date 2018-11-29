@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClientPatientManagement.Data
 {
-    public class Class1
+    public class FactoryMain
     {
-    }
+          for (int i = 0; i <= 3; i++)
+        {
+            var position = Factory.Get(i);
+        Console.WriteLine("Where id = {0}, position = {1} ", i, position.Title);
+        }
+}
 
     internal abstract class Position
     {
@@ -22,6 +27,28 @@ namespace ClientPatientManagement.Data
             get
             {
                 return "Manager";
+            }
+        }
+    }
+
+    internal class Clerk : Position
+    {
+        public override string Title
+        {
+            get
+            {
+                return "Clerk";
+            }
+        }
+    }
+
+    internal class Programmer : Position
+    {
+        public override string Title
+        {
+            get
+            {
+                return "Programmer";
             }
         }
     }
