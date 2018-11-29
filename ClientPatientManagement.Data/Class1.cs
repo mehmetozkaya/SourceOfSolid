@@ -9,4 +9,11 @@ namespace ClientPatientManagement.Data
     public class Class1
     {
     }
+
+    internal abstract class Position
+    {
+        public abstract string Title { get; }
+    }
+
+
 }
