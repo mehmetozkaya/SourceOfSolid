@@ -15,5 +15,16 @@ namespace ClientPatientManagement.Data
         public abstract string Title { get; }
     }
 
+    internal class Manager : Position
+    {
+        public override string Title
+        {
+            get
+            {
+                return "Manager";
+            }
+        }
+    }
+
 
 }
