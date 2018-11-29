@@ -8,12 +8,15 @@ namespace ClientPatientManagement.Data
 {
     public class FactoryMain
     {
-          for (int i = 0; i <= 3; i++)
+        public void Main()
         {
-            var position = Factory.Get(i);
-        Console.WriteLine("Where id = {0}, position = {1} ", i, position.Title);
-        }
-}
+            for (int i = 0; i <= 3; i++)
+            {
+                var position = Factory.Get(i);
+                // Console.WriteLine("Where id = {0}, position = {1} ", i, position.Title);
+            }
+        }          
+    }
 
     internal abstract class Position
     {
@@ -53,7 +56,7 @@ namespace ClientPatientManagement.Data
         }
     }
 
-    public static class Factory
+    internal static class Factory
     {
         /// <summary>
         /// Decides which class to instantiate.
